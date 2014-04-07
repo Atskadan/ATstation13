@@ -1046,3 +1046,17 @@
 		if(reagents)
 			reagents.add_reagent("teapowder", 1+round((potency / 10), 2))
 			reagents.add_reagent("kelotane", 1+round((potency / 20), 1))
+			reagents.add_reagent("kelotane", 1+round((potency / 20), 1))
+
+/obj/item/weapon/reagent_containers/food/snacks/grown/peanut
+	seed = "/obj/item/seeds/peanut"
+	name = "Peanuts"
+	desc = "These things aren't even real nuts. Seriously. That's messed up!"
+	icon_state = "peanuts"
+	potency = 20
+	New()
+		..()
+		spawn(5)	//So potency can be set in the proc that creates these crops
+			reagents.add_reagent("nutriment", 1+round((potency / 15), 1))
+			reagents.add_reagent("peanutbutter", 1+round((potency / 30), 1))
+			bitesize = 1+round(reagents.total_volume / 2, 1)

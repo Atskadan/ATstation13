@@ -1213,3 +1213,49 @@
 		/obj/item/toy/crayon/purple,
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/burger/purple
+
+/datum/recipe/pancakes
+	reagents = list("flour" = 10, "milk" = 5, "sugar" = 5)
+	items = list(
+		/obj/item/weapon/reagent_containers/food/snacks/egg,
+	)
+	result = /obj/item/weapon/reagent_containers/food/snacks/pancakes
+
+/datum/recipe/pancakessyrup
+	reagents = list("maplesyrup" = 5)
+	items = list(
+		/obj/item/weapon/reagent_containers/food/snacks/pancakes,
+	)
+	result = /obj/item/weapon/reagent_containers/food/snacks/pancakessyrup
+
+/datum/recipe/pbsandwich
+	reagents = list("peanutbutter" = 5)
+	items = list(
+		/obj/item/weapon/reagent_containers/food/snacks/breadslice,
+		/obj/item/weapon/reagent_containers/food/snacks/breadslice,
+	)
+	result = /obj/item/weapon/reagent_containers/food/snacks/pbsandwich
+
+/datum/recipe/pbj/berry
+	reagents = list("peanutbutter" = 5, "berryjuice" = 5)
+	items = list(
+		/obj/item/weapon/reagent_containers/food/snacks/breadslice,
+		/obj/item/weapon/reagent_containers/food/snacks/breadslice,
+	)
+	result = /obj/item/weapon/reagent_containers/food/snacks/pbj/berry
+
+/datum/recipe/pbj/cherry
+	reagents = list("peanutbutter" = 5, "cherryjelly" = 5)
+	items = list(
+		/obj/item/weapon/reagent_containers/food/snacks/breadslice,
+		/obj/item/weapon/reagent_containers/food/snacks/breadslice,
+	)
+	result = /obj/item/weapon/reagent_containers/food/snacks/pbj/cherry
+
+/datum/recipe/pbj/slime
+	reagents = list("peanutbutter" = 5, "slimejelly" = 5)
+	items = list(
+		/obj/item/weapon/reagent_containers/food/snacks/breadslice,
+		/obj/item/weapon/reagent_containers/food/snacks/breadslice,
+	)
+	result = /obj/item/weapon/reagent_containers/food/snacks/pbj/slime

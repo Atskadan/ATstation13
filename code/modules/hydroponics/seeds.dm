@@ -1178,3 +1178,20 @@
 	plant_type = 0
 	growthstages = 5
 	rarity = 20
+
+/obj/item/seeds/peanut
+	name = "pack of peanut plants"
+	desc = "Not for consumption, these ones are for growing."
+	icon_state = "seed-peanut"
+	species = "peanut"
+	plantname = "Peanut Plant"
+	product = /obj/item/weapon/reagent_containers/food/snacks/grown/peanut
+	lifespan = 50
+	endurance = 30
+	maturation = 5
+	production = 5
+	yield = 6
+	potency = 10
+	plant_type = 0
+	oneharvest = 1
+	growthstages = 4

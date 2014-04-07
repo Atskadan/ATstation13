@@ -42,6 +42,9 @@
 		input = /obj/item/weapon/reagent_containers/food/snacks/grown/soybeans
 		output = /obj/item/weapon/reagent_containers/food/snacks/soydope
 
+	towercap
+		input = /obj/item/weapon/grown/log
+		output = /obj/item/weapon/reagent_containers/food/drinks/syrup
 
 	/* mobs */
 	mob

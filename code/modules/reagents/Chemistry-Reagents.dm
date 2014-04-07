@@ -2197,6 +2197,33 @@ datum
 				..()
 				return
 
+		peanutbutter
+			name = "Peanut Butter"
+			id = "peanutbutter"
+			description = "Nothing takes the taste out of peanut butter quite like unrequited love."
+			reagent_state = SOLID
+			nutriment_factor = 2 * REAGENTS_METABOLISM
+			color = "#B06F2D" // rgb: 176, 111, 45
+
+			on_mob_life(var/mob/living/M as mob)
+				M.nutrition += nutriment_factor
+				..()
+				return
+
+		maplesyrup
+			name = "Maple Syrup"
+			id = "maplesyrup"
+			description = "As it turns out, tower-cap log sap makes good syrup."
+			reagent_state = SOLID
+			nutriment_factor = 1 * REAGENTS_METABOLISM
+			color = "#944023" // rgb: 148, 64, 35
+
+			on_mob_life(var/mob/living/M as mob)
+				M.nutrition += nutriment_factor
+				..()
+				return
+
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////// DRINKS BELOW, Beer is up there though, along with cola. Cap'n Pete's Cuban Spiced Rum////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////

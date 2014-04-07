@@ -2748,6 +2748,7 @@
 		reagents.add_reagent("purplecrayonpowder", 10)
 		bitesize = 3
 
+
 ////////////////////////////////ICE CREAM///////////////////////////////////
 /obj/item/weapon/reagent_containers/food/snacks/icecream
         name = "ice cream"
@@ -2860,3 +2861,75 @@
 		..()
 		reagents.add_reagent("nutriment", 4)
 		bitesize = 3
+
+/obj/item/weapon/reagent_containers/food/snacks/pancakes
+	name = "pancakes"
+	desc = "Despite the name, these aren't cakes and weren't made in a pan."
+	icon_state = "pancakes"
+	trash = /obj/item/trash/plate
+	filling_color = "#C18D5E"
+	New()
+		..()
+		reagents.add_reagent("nutriment", 10)
+		bitesize = 6
+
+/obj/item/weapon/reagent_containers/food/snacks/pancakessyrup
+	name = "pancakes with syrup"
+	desc = "Who eats pancakes WITHOUT syrup, anyway?"
+	icon_state = "pancakes-syrup"
+	trash = /obj/item/trash/plate
+	filling_color = "#C18D5E"
+	New()
+		..()
+		reagents.add_reagent("nutriment", 10)
+		reagents.add_reagent("maplesyrup", 5)
+		bitesize = 6
+
+/obj/item/weapon/reagent_containers/food/snacks/pbsandwich
+	name = "peanut butter sandwich"
+	desc = "The lunch of any spaceman with a mother."
+	icon_state = "pbsandwich"
+	trash = /obj/item/trash/plate
+	filling_color = "#8C3300"
+	New()
+		..()
+		reagents.add_reagent("nutriment", 8)
+		reagents.add_reagent("peanutbutter", 5)
+		bitesize = 2
+
+/obj/item/weapon/reagent_containers/food/snacks/pbj/berry
+	name = "peanut butter jelly sandwich"
+	desc = "A PBJ with berry jelly. It tastes like purple."
+	icon_state = "pbjberry"
+	trash = /obj/item/trash/plate
+	filling_color = "#8C3300"
+	New()
+		..()
+		reagents.add_reagent("nutriment", 8)
+		reagents.add_reagent("berryjuice", 5)
+		bitesize = 2
+
+/obj/item/weapon/reagent_containers/food/snacks/pbj/cherry
+	name = "peanut butter jelly sandwich"
+	desc = "A PBJ with cherry jelly. Cherry is my favorite!"
+	icon_state = "pbjcherry"
+	trash = /obj/item/trash/plate
+	filling_color = "#8C3300"
+	New()
+		..()
+		reagents.add_reagent("nutriment", 8)
+		reagents.add_reagent("cherryjelly", 5)
+		bitesize = 2
+
+/obj/item/weapon/reagent_containers/food/snacks/pbj/slime
+	name = "peanut butter slimejelly sandwich"
+	desc = "I just had a sandwich! No ordinary sandwich! A sandwich with slime jelly!~"
+	icon_state = "pbjslime"
+	trash = /obj/item/trash/plate
+	filling_color = "#8C3300"
+	New()
+		..()
+		reagents.add_reagent("nutriment", 8)
+		reagents.add_reagent("slimejelly", 5)
+		bitesize = 2
+

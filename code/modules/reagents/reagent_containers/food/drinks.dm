@@ -389,3 +389,28 @@
 		src.pixel_x = rand(-10.0, 10)
 		src.pixel_y = rand(-10.0, 10)
 
+/obj/item/weapon/reagent_containers/food/drinks/peanutbutter
+	name = "jar of peanut butter"
+	desc = "A jar of peanut butter. Choosy NanoTrasen chose this brand."
+	icon = 'icons/obj/food.dmi'
+	icon_state = "peanutjar"
+	item_state = "peanutjar"
+	New()
+		..()
+		reagents.add_reagent("peanutbutter", 50)
+		src.pixel_x = rand(-10.0, 10)
+		src.pixel_y = rand(-10.0, 10)
+
+/obj/item/weapon/reagent_containers/food/drinks/syrup
+	name = "bottle of maple syrup"
+	desc = "Maple syrup makes everything better."
+	icon = 'icons/obj/food.dmi'
+	icon_state = "syrupjar"
+	item_state = "syrupjar"
+	New()
+		..()
+		reagents.add_reagent("maplesyrup", 30)
+		src.pixel_x = rand(-10.0, 10)
+		src.pixel_y = rand(-10.0, 10)
+
+
