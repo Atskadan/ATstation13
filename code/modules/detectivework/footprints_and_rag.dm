@@ -30,7 +30,7 @@
 
 /obj/item/weapon/reagent_containers/glass/rag
 	name = "damp rag"
-	desc = "For cleaning up messes, you suppose."
+	desc = "Does this smell like chloroform to you?"
 	w_class = 1
 	icon = 'icons/obj/toy.dmi'
 	icon_state = "rag"
