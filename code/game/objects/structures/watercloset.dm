@@ -389,21 +389,6 @@
 					if(R.amount <= 0) qdel(R)
 					return
 
-
-/*
-			if(istype(P, /obj/item/stack/cable_coil))
-				var/obj/item/stack/cable_coil/C = P
-				if(C.amount >= 5)
-					playsound(src.loc, 'sound/items/Deconstruct.ogg', 50, 1)
-					if(do_after(user, 20))
-						if(C && C.amount >= 5)
-							C.amount -= 5
-							if(C.amount <= 0) qdel(C)
-							user << "<span class='notice'>You add cables to the frame.</span>"
-							src.state = 3
-							src.icon_state = "3"
-*/
-
 	else if(istype(O, /obj/item/weapon/melee/baton))
 		var/obj/item/weapon/melee/baton/B = O
 		if(B.bcell)
