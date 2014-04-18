@@ -5,6 +5,7 @@
  *		Wood
  *		Cloth
  *		Cardboard
+ *		Torn Rags
  */
 
 /*
@@ -143,3 +144,14 @@ var/global/list/datum/stack_recipe/cardboard_recipes = list ( \
 /obj/item/stack/sheet/cardboard/New(var/loc, var/amount=null)
 		recipes = cardboard_recipes
 		return ..()
+
+/*
+ * Rags
+ */
+/obj/item/stack/sheet/rag
+	name = "torn rags"
+	desc = "A rag that has been torn from some other cloth."
+	singular_name = "torn rag"
+	icon = 'icons/obj/toy.dmi'
+	icon_state = "rag"
+	w_class = 1

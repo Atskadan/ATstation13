@@ -377,6 +377,33 @@
 		user << "<span class='notice'>You fill [RG] from [src].</span>"
 		return
 
+	if(istype(O, /obj/item/stack/sheet/rag))
+		var/obj/item/stack/sheet/rag/R = O
+		if(R.amount >= 1)
+			user << "<span class='notice'>You begin to wash the rag.</span>"
+			if(do_after(user, 40))
+				if(R && R.amount >=1)
+					R.amount -= 1
+					user << "<span class='notice'>You wet the rag.</span>"
+					new /obj/item/weapon/reagent_containers/glass/rag(get_turf(src))
+					if(R.amount <= 0) qdel(R)
+					return
+
+
+/*
+			if(istype(P, /obj/item/stack/cable_coil))
+				var/obj/item/stack/cable_coil/C = P
+				if(C.amount >= 5)
+					playsound(src.loc, 'sound/items/Deconstruct.ogg', 50, 1)
+					if(do_after(user, 20))
+						if(C && C.amount >= 5)
+							C.amount -= 5
+							if(C.amount <= 0) qdel(C)
+							user << "<span class='notice'>You add cables to the frame.</span>"
+							src.state = 3
+							src.icon_state = "3"
+*/
+
 	else if(istype(O, /obj/item/weapon/melee/baton))
 		var/obj/item/weapon/melee/baton/B = O
 		if(B.bcell)

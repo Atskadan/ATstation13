@@ -18,6 +18,20 @@ LINEN BINS
 	w_class = 1.0
 	item_color = "white"
 
+/obj/item/weapon/bedsheet/attackby(obj/item/weapon/W as obj, mob/user as mob)
+	if(is_sharp(W))
+		user << "<span class='notice'>You begin to cut \the [src] into rags.</span>"
+		if(do_after(user,20))
+			user << "<span class='notice'>You cut \the [src] into rags.</span>"
+			var/num = rand(1, 3)
+			src.makeRags(num)
+			qdel(src)
+	return
+
+/obj/item/weapon/bedsheet/proc/makeRags(num)
+	for(var/i=1,i<=num,i++)
+		new /obj/item/stack/sheet/rag(get_turf(src))
+	return
 
 /obj/item/weapon/bedsheet/attack(mob/living/M, mob/user)
 	if(!attempt_initiate_surgery(src, M, user))
@@ -157,7 +171,7 @@ LINEN BINS
 	desc = "It looks rather cosy."
 	icon = 'icons/obj/structures.dmi'
 	icon_state = "linenbin-full"
-	anchored = 1
+	anchored = 0
 	var/amount = 10
 	var/list/sheets = list()
 	var/obj/item/hidden = null
