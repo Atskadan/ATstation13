@@ -4259,7 +4259,7 @@
 "bDU" = (/obj/machinery/atmospherics/pipe/simple{pipe_color = "red"; dir = 4; icon_state = "intact-r-f"; level = 1; name = "pipe"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/simulated/wall,/area/maintenance/asmaint)
 "bDV" = (/obj/machinery/atmospherics/pipe/simple{pipe_color = "red"; dir = 4; icon_state = "intact-r-f"; level = 1; name = "pipe"},/turf/simulated/wall,/area/maintenance/asmaint)
 "bDW" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 10},/turf/simulated/wall,/area/maintenance/asmaint)
-"bDX" = (/obj/structure/disposalpipe/segment,/obj/structure/table,/obj/item/clothing/gloves/latex,/obj/item/clothing/mask/surgical,/obj/item/clothing/suit/apron/surgical,/turf/simulated/floor{dir = 4; icon_state = "whitehall"},/area/medical/sleeper)
+"bDX" = (/obj/structure/disposalpipe/segment,/obj/structure/table,/obj/item/clothing/gloves/latex,/obj/item/clothing/mask/surgical,/obj/item/clothing/suit/storage/apron/surgical,/turf/simulated/floor{dir = 4; icon_state = "whitehall"},/area/medical/sleeper)
 "bDY" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/simulated/floor{icon_state = "white"},/area/medical/sleeper)
 "bDZ" = (/obj/structure/table,/obj/item/weapon/surgical_drapes,/obj/item/weapon/razor,/turf/simulated/floor{dir = 8; icon_state = "whitehall"},/area/medical/sleeper)
 "bEa" = (/obj/structure/table,/obj/structure/bedsheetbin{pixel_x = 2},/obj/item/clothing/suit/straight_jacket,/obj/item/clothing/mask/muzzle,/obj/machinery/light/small{dir = 8},/turf/simulated/floor{dir = 8; icon_state = "whitebluecorner"},/area/medical/sleeper)

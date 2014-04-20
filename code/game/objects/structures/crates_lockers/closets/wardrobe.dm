@@ -98,7 +98,7 @@
 	new /obj/item/clothing/shoes/black(src)
 	new /obj/item/clothing/suit/nun(src)
 	new /obj/item/clothing/head/nun_hood(src)
-	new /obj/item/clothing/suit/chaplain_hoodie(src)
+	new /obj/item/clothing/suit/storage/chaplain_hoodie(src)
 	new /obj/item/clothing/head/chaplain_hood(src)
 	new /obj/item/clothing/suit/holidaypriest(src)
 	new /obj/item/weapon/storage/backpack/cultpack (src)
@@ -231,9 +231,9 @@
 	new /obj/item/clothing/under/rank/scientist(src)
 	new /obj/item/clothing/under/rank/scientist(src)
 	new /obj/item/clothing/under/rank/scientist(src)
-	new /obj/item/clothing/suit/labcoat(src)
-	new /obj/item/clothing/suit/labcoat(src)
-	new /obj/item/clothing/suit/labcoat(src)
+	new /obj/item/clothing/suit/storage/labcoat(src)
+	new /obj/item/clothing/suit/storage/labcoat(src)
+	new /obj/item/clothing/suit/storage/labcoat(src)
 	new /obj/item/clothing/shoes/white(src)
 	new /obj/item/clothing/shoes/white(src)
 	new /obj/item/clothing/shoes/white(src)
@@ -248,8 +248,8 @@
 /obj/structure/closet/wardrobe/robotics_black/New()
 	new /obj/item/clothing/under/rank/roboticist(src)
 	new /obj/item/clothing/under/rank/roboticist(src)
-	new /obj/item/clothing/suit/labcoat(src)
-	new /obj/item/clothing/suit/labcoat(src)
+	new /obj/item/clothing/suit/storage/labcoat(src)
+	new /obj/item/clothing/suit/storage/labcoat(src)
 	new /obj/item/clothing/shoes/black(src)
 	new /obj/item/clothing/shoes/black(src)
 	new /obj/item/clothing/gloves/black(src)
@@ -269,8 +269,8 @@
 	new /obj/item/clothing/under/rank/chemist(src)
 	new /obj/item/clothing/shoes/white(src)
 	new /obj/item/clothing/shoes/white(src)
-	new /obj/item/clothing/suit/labcoat/chemist(src)
-	new /obj/item/clothing/suit/labcoat/chemist(src)
+	new /obj/item/clothing/suit/storage/labcoat/chemist(src)
+	new /obj/item/clothing/suit/storage/labcoat/chemist(src)
 	return
 
 
@@ -284,8 +284,8 @@
 	new /obj/item/clothing/under/rank/geneticist(src)
 	new /obj/item/clothing/shoes/white(src)
 	new /obj/item/clothing/shoes/white(src)
-	new /obj/item/clothing/suit/labcoat/genetics(src)
-	new /obj/item/clothing/suit/labcoat/genetics(src)
+	new /obj/item/clothing/suit/storage/labcoat/genetics(src)
+	new /obj/item/clothing/suit/storage/labcoat/genetics(src)
 	return
 
 
@@ -299,8 +299,8 @@
 	new /obj/item/clothing/under/rank/virologist(src)
 	new /obj/item/clothing/shoes/white(src)
 	new /obj/item/clothing/shoes/white(src)
-	new /obj/item/clothing/suit/labcoat/virologist(src)
-	new /obj/item/clothing/suit/labcoat/virologist(src)
+	new /obj/item/clothing/suit/storage/labcoat/virologist(src)
+	new /obj/item/clothing/suit/storage/labcoat/virologist(src)
 	new /obj/item/clothing/mask/surgical(src)
 	new /obj/item/clothing/mask/surgical(src)
 	return

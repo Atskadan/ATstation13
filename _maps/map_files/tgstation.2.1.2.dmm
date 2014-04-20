@@ -3962,7 +3962,7 @@
 "byk" = (/obj/machinery/atmospherics/pipe/simple{pipe_color = "red"; dir = 4; icon_state = "intact-r-f"; level = 1; name = "pipe"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/simulated/wall,/area/maintenance/asmaint)
 "byl" = (/obj/machinery/atmospherics/pipe/simple{pipe_color = "red"; dir = 4; icon_state = "intact-r-f"; level = 1; name = "pipe"},/turf/simulated/wall,/area/maintenance/asmaint)
 "bym" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 10},/turf/simulated/wall,/area/maintenance/asmaint)
-"byn" = (/obj/structure/disposalpipe/segment,/obj/structure/table,/obj/item/clothing/gloves/latex,/obj/item/clothing/mask/surgical,/obj/item/clothing/suit/apron/surgical,/turf/simulated/floor{dir = 4; icon_state = "whitehall"},/area/medical/sleeper)
+"byn" = (/obj/structure/disposalpipe/segment,/obj/structure/table,/obj/item/clothing/gloves/latex,/obj/item/clothing/mask/surgical,/obj/item/clothing/suit/storage/apron/surgical,/turf/simulated/floor{dir = 4; icon_state = "whitehall"},/area/medical/sleeper)
 "byo" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/simulated/floor{icon_state = "white"},/area/medical/sleeper)
 "byp" = (/obj/structure/table,/obj/item/weapon/surgical_drapes,/turf/simulated/floor{dir = 8; icon_state = "whitehall"},/area/medical/sleeper)
 "byq" = (/obj/machinery/door/firedoor/border_only,/obj/machinery/door/airlock/glass_medical{id_tag = "MedbayFoyer"; name = "Medbay"; req_access_txt = "5"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/simulated/floor{dir = 1; icon_state = "whiteblue"},/area/medical/medbay)

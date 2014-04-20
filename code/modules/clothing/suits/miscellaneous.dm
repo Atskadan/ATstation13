@@ -86,7 +86,7 @@
 	flags_inv = HIDEJUMPSUIT
 
 
-/obj/item/clothing/suit/apron/overalls
+/obj/item/clothing/suit/storage/apron/overalls
 	name = "coveralls"
 	desc = "A set of denim overalls."
 	icon_state = "overalls"
