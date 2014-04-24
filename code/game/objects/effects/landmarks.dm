@@ -104,7 +104,7 @@
 /obj/effect/landmark/costume/madscientist/New()
 	new /obj/item/clothing/under/gimmick/rank/captain/suit(src.loc)
 	new /obj/item/clothing/head/flatcap(src.loc)
-	new /obj/item/clothing/suit/storage/labcoat/mad(src.loc)
+	new /obj/item/clothing/storage/suit/labcoat/mad(src.loc)
 	new /obj/item/clothing/glasses/gglasses(src.loc)
 	qdel(src)
 
@@ -179,7 +179,7 @@
 	new /obj/item/clothing/under/waiter(src.loc)
 	var/CHOICE= pick( /obj/item/clothing/head/kitty, /obj/item/clothing/head/rabbitears)
 	new CHOICE(src.loc)
-	new /obj/item/clothing/suit/storage/apron(src.loc)
+	new /obj/item/clothing/storage/suit/apron(src.loc)
 	qdel(src)
 
 /obj/effect/landmark/costume/pirate/New()

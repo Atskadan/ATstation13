@@ -70,7 +70,7 @@
 				new /obj/item/weapon/melee/energy/sword(src)
 				new /obj/item/weapon/dnainjector/telemut/darkbundle(src)
 				new /obj/item/clothing/head/chaplain_hood(src)
-				new /obj/item/clothing/suit/storage/chaplain_hoodie(src)
+				new /obj/item/clothing/storage/suit/chaplain_hoodie(src)
 				new /obj/item/weapon/card/id/syndicate(src)
 				return
 

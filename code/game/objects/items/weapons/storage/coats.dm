@@ -1,10 +1,10 @@
-/obj/item/clothing/suit/storage/
+/obj/item/clothing/storage/
 	var/obj/screen/storage/boxes
 	var/obj/screen/close/closer
 	var/obj/slot1
 	var/obj/slot2
 
-/obj/item/clothing/suit/storage/New()
+/obj/item/clothing/storage/New()
 	src.boxes = new /obj/screen/storage(  )
 	src.boxes.name = "storage"
 	src.boxes.master = src
@@ -17,7 +17,7 @@
 	src.closer.layer = 20
 	src.closer.screen_loc = "9,7"
 
-/obj/item/clothing/suit/storage/proc/view_inv(mob/user as mob)
+/obj/item/clothing/storage/proc/view_inv(mob/user as mob)
 	if(!user)
 		return
 	user.client.screen += src.boxes
@@ -30,7 +30,7 @@
 		O.layer = 20
 		xs++
 
-/obj/item/clothing/suit/storage/proc/close(mob/user as mob)
+/obj/item/clothing/storage/proc/close(mob/user as mob)
 	if(!user)
 		return
 	user.s_active = src
@@ -38,17 +38,17 @@
 	user.client.screen -= src.closer
 	user.client.screen -= src.contents
 
-/obj/item/clothing/suit/storage/MouseDrop(atom/A)
+/obj/item/clothing/storage/MouseDrop(atom/A)
 	if(istype(A,/mob/living/carbon))
 		src.view_inv(A)
 
-/obj/item/clothing/suit/storage/attackby(obj/item/weapon/W as obj, mob/user as mob)
+/obj/item/clothing/storage/attackby(obj/item/weapon/W as obj, mob/user as mob)
 	if(W.w_class > 2 || src.loc == W )
 		return
 	if(src.contents.len >= 2)
 		user << "You have nowhere to place that"
 		return
-	user.u_equip(W)
+	user.unEquip(W)
 	W.loc = src
 	if ((user.client && user.s_active != src))
 		user.client.screen -= W
@@ -56,3 +56,5 @@
 		close(user)
 		view_inv(user)
 	W.dropped(user)
+
+

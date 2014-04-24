@@ -779,7 +779,7 @@
 "aoY" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 10},/turf/simulated/floor{icon_state = "white"},/area/medical/medbay)
 "aoZ" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/simulated/floor{icon_state = "white"},/area/medical/medbay)
 "apa" = (/obj/structure/extinguisher_cabinet{pixel_x = 27; pixel_y = 0},/turf/simulated/floor{icon_state = "white"},/area/medical/medbay)
-"apb" = (/obj/structure/table,/obj/item/clothing/gloves/latex,/obj/item/clothing/mask/surgical,/obj/item/clothing/suit/storage/apron/surgical,/turf/simulated/floor{dir = 4; icon_state = "whitehall"},/area/medical/medbay)
+"apb" = (/obj/structure/table,/obj/item/clothing/gloves/latex,/obj/item/clothing/mask/surgical,/obj/item/clothing/storage/suit/apron/surgical,/turf/simulated/floor{dir = 4; icon_state = "whitehall"},/area/medical/medbay)
 "apc" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 6},/turf/simulated/floor{icon_state = "white"},/area/medical/medbay)
 "apd" = (/obj/machinery/atmospherics/unary/vent_pump{dir = 8; on = 1},/turf/simulated/floor{icon_state = "white"},/area/medical/medbay)
 "ape" = (/turf/simulated/floor{icon_state = "white"},/area/medical/medbay)

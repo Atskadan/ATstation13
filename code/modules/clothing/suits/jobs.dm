@@ -3,7 +3,7 @@
  */
 
 //Botanist
-/obj/item/clothing/suit/storage/apron
+/obj/item/clothing/storage/suit/apron
 	name = "apron"
 	desc = "A basic blue apron."
 	icon_state = "apron"
@@ -13,7 +13,7 @@
 	allowed = list(/obj/item/weapon/reagent_containers/spray/plantbgone,/obj/item/device/analyzer/plant_analyzer,/obj/item/seeds,/obj/item/weapon/reagent_containers/glass/bottle,/obj/item/weapon/minihoe)
 
 //Captain
-/obj/item/clothing/suit/storage/captunic
+/obj/item/clothing/storage/suit/captunic
 	name = "captain's parade tunic"
 	desc = "Worn by a Captain to show their class."
 	icon_state = "captunic"
@@ -23,7 +23,7 @@
 	allowed = list(/obj/item/weapon/disk, /obj/item/weapon/stamp, /obj/item/weapon/reagent_containers/food/drinks/flask, /obj/item/weapon/melee, /obj/item/weapon/storage/lockbox/medal, /obj/item/device/flash, /obj/item/weapon/storage/box/matches, /obj/item/weapon/lighter, /obj/item/clothing/mask/cigarette, /obj/item/weapon/storage/fancy/cigarettes, /obj/item/weapon/tank/emergency_oxygen)
 
 //Chaplain
-/obj/item/clothing/suit/storage/chaplain_hoodie
+/obj/item/clothing/storage/suit/chaplain_hoodie
 	name = "chaplain hoodie"
 	desc = "This suit says to you 'hush'!"
 	icon_state = "chaplain_hoodie"
@@ -42,7 +42,7 @@
 	allowed = list(/obj/item/weapon/storage/bible, /obj/item/weapon/nullrod, /obj/item/weapon/reagent_containers/food/drinks/bottle/holywater, /obj/item/weapon/storage/fancy/candle_box, /obj/item/candle, /obj/item/weapon/tank/emergency_oxygen)
 
 //Chef
-/obj/item/clothing/suit/storage/chef
+/obj/item/clothing/storage/suit/chef
 	name = "chef's apron"
 	desc = "An apron used by a high class chef."
 	icon_state = "chef"
@@ -53,7 +53,7 @@
 	allowed = list (/obj/item/weapon/kitchenknife,/obj/item/weapon/butch)
 
 //Chef
-/obj/item/clothing/suit/storage/chef/classic
+/obj/item/clothing/storage/suit/chef/classic
 	name = "A classic chef's apron."
 	desc = "A basic, dull, white chef's apron."
 	icon_state = "apronchef"
@@ -62,7 +62,7 @@
 	body_parts_covered = CHEST|GROIN
 
 //Detective
-/obj/item/clothing/suit/storage/det_suit
+/obj/item/clothing/storage/suit/det_suit
 	name = "coat"
 	desc = "An 18th-century multi-purpose trenchcoat. Someone who wears this means serious business."
 	icon_state = "detective"
@@ -140,7 +140,7 @@
 
 
 //Surgeon
-/obj/item/clothing/suit/storage/apron/surgical
+/obj/item/clothing/storage/suit/apron/surgical
 	name = "surgical apron"
 	desc = "A sterile blue surgical apron."
 	icon_state = "surgical"

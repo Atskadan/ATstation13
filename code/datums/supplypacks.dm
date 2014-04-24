@@ -744,7 +744,7 @@ var/list/all_supply_groups = list(supply_emergency,supply_security,supply_engine
 					/obj/item/weapon/minihoe,
 					/obj/item/device/analyzer/plant_analyzer,
 					/obj/item/clothing/gloves/botanic_leather,
-					/obj/item/clothing/suit/storage/apron) // Updated with new things
+					/obj/item/clothing/storage/suit/apron) // Updated with new things
 	cost = 15
 	containertype = /obj/structure/closet/crate/hydroponics
 	containername = "hydroponics crate"
@@ -923,9 +923,9 @@ var/list/all_supply_groups = list(supply_emergency,supply_security,supply_engine
 					/obj/item/weapon/reagent_containers/food/drinks/bottle/holywater,
 					/obj/item/weapon/storage/bible/booze,
 					/obj/item/weapon/storage/bible/booze,
-					/obj/item/clothing/suit/storage/chaplain_hoodie,
+					/obj/item/clothing/storage/suit/chaplain_hoodie,
 					/obj/item/clothing/head/chaplain_hood,
-					/obj/item/clothing/suit/storage/chaplain_hoodie,
+					/obj/item/clothing/storage/suit/chaplain_hoodie,
 					/obj/item/clothing/head/chaplain_hood)
 	cost = 40	// it costs so much because the Space Church is ran by Space Jews
 	containername = "religious supplies crate"
