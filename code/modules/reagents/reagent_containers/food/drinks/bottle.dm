@@ -39,7 +39,7 @@
 
 	if(user.a_intent != "harm" || !isGlass)
 		return ..()
-	do_smash()
+	do_smash(user,target)
 
 /obj/item/weapon/reagent_containers/food/drinks/bottle/proc/do_smash(var/mob/living/user,var/mob/living/target)
 	force = 15 //Smashing bottles over someoen's head hurts.
