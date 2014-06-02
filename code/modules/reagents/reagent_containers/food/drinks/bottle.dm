@@ -41,7 +41,7 @@
 		return ..()
 	do_smash()
 
-/obj/item/weapon/reagent_containers/food/drinks/bottle/proc/do_smash()
+/obj/item/weapon/reagent_containers/food/drinks/bottle/proc/do_smash(var/mob/living/user,var/mob/living/target)
 	force = 15 //Smashing bottles over someoen's head hurts.
 
 	var/obj/item/organ/limb/affecting = user.zone_sel.selecting //Find what the player is aiming at
@@ -112,7 +112,7 @@
 	return
 
 /obj/item/weapon/reagent_containers/food/drinks/bottle/on_throw_impact(mob/living/user as mob, mob/living/target as mob) //thanks remie
-	do_smash()
+	do_smash(user,target)
 	return
 
 //Keeping this here for now, I'll ask if I should keep it here.
