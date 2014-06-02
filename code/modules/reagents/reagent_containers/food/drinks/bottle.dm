@@ -39,8 +39,9 @@
 
 	if(user.a_intent != "harm" || !isGlass)
 		return ..()
+	do_smash()
 
-
+/obj/item/weapon/reagent_containers/food/drinks/bottle/proc/do_smash()
 	force = 15 //Smashing bottles over someoen's head hurts.
 
 	var/obj/item/organ/limb/affecting = user.zone_sel.selecting //Find what the player is aiming at
@@ -84,8 +85,8 @@
 
 		//Display an attack message.
 		for(var/mob/O in viewers(user, null))
-			if(target != user) O.show_message(text("\red <B>[target] has been hit over the head with a bottle of [src.name], by [user]!</B>"), 1)
-			else O.show_message(text("\red <B>[target] hit himself with a bottle of [src.name] on the head!</B>"), 1)
+			if(target != user) O.show_message(text("<span class='danger'><B>[target] has been hit in the head with a bottle of [src.name], by [user]!</B></span>"), 1)
+			else O.show_message(text("<span class='danger'><B>[target] hit \himself with a bottle of [src.name] on the head!</B></span>"), 1)
 		//Weaken the target for the duration that we calculated and divide it by 5.
 		if(armor_duration)
 			target.apply_effect(min(armor_duration, 10) , WEAKEN) // Never weaken more than a flash!
@@ -94,7 +95,7 @@
 		//Default attack message and don't weaken the target.
 		for(var/mob/O in viewers(user, null))
 			if(target != user) O.show_message(text("<span class='danger'>[target] has been attacked with a bottle of [src.name], by [user]!</span>"), 1)
-			else O.show_message(text("<span class='danger'>[target] has attacked himself with a bottle of [src.name]!</span>"), 1)
+			else O.show_message(text("<span class='danger'>[target] has attacked \himself with a bottle of [src.name]!</span>"), 1)
 
 	//Attack logs
 	add_logs(user, target, "attacked", object="bottle")
@@ -102,12 +103,16 @@
 	//The reagents in the bottle splash all over the target, thanks for the idea Nodrak
 	if(src.reagents)
 		for(var/mob/O in viewers(user, null))
-			O.show_message(text("\blue <B>The contents of the [src] splashes all over [target]!</B>"), 1)
+			O.show_message(text("<span class='notice'><B>The contents of the [src] splashes all over [target]!</B></span>"), 1)
 		src.reagents.reaction(target, TOUCH)
 
 	//Finally, smash the bottle. This kills (del) the bottle.
 	src.smash(target, user)
 
+	return
+
+/obj/item/weapon/reagent_containers/food/drinks/bottle/on_throw_impact(mob/living/user as mob, mob/living/target as mob) //thanks remie
+	do_smash()
 	return
 
 //Keeping this here for now, I'll ask if I should keep it here.
